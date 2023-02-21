@@ -45,6 +45,7 @@ class Queue {
   /** peek(): return the value of the first node in the queue. */
 
   peek() {
+    if (this.size === 0) throw Error('Queue is empty');
     return this.first.val;
   }
 
